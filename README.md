@@ -1,6 +1,6 @@
 # Digital Twin
 
-Taken from AI in production course [here].
+Taken from AI in production course [here](https://github.com/ed-donner/production/blob/main/week2/day4.md#day-4-infrastructure-as-code-with-terraform).
 
 ## Initialize Terraform
 

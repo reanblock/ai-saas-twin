@@ -11,7 +11,7 @@ In a terminal run:
 ```bash
 cd backend
 uv sync
-uv run uvicorn server:app --reload --port 8000
+uv run uvicorn server:app --reload
 ```
 
 Check the API health endpoint [here](http://localhost:8000/health).
@@ -37,8 +37,8 @@ The following script (the same script that is run in the Github Action - see bel
 ./scripts/deploy.sh prod
 ```
 
-**Dev**  ✅ Deployment complete! https://drrvcr35hhd5x.cloudfront.net
-**Prod** ✅ Deployment complete! https://d3h2dpeuy9vy75.cloudfront.net
+- **Dev**  ✅ Deployment complete! https://drrvcr35hhd5x.cloudfront.net
+- **Prod** ✅ Deployment complete! https://d3h2dpeuy9vy75.cloudfront.net
 
 ## Deploy to AWS using Github Actions 
 

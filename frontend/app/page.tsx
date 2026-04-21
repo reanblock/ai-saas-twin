@@ -2,13 +2,20 @@ import Twin from '@/components/twin';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
+    <main
+      className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
+      style={{ backgroundImage: "url('/background_image.jpg')" }}
+    >
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-center text-gray-800 mb-2">
-            Reanblock
+          <h1 className="flex justify-center mb-2">
+            <img
+              src="/reanblock-logo-horizontal.png"
+              alt="Reanblock"
+              className="h-16 w-auto"
+            />
           </h1>
-          <p className="text-center text-gray-600 mb-8">
+          <p className="text-center text-white mb-8">
             Digital Twin
           </p>
 
@@ -17,12 +24,27 @@ export default function Home() {
           </div>
 
           <footer className="mt-8 text-center text-sm text-gray-500">
-            <a href='https://linkedin.com/in/jensendarren1' target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
+            <nav className="p-4">
+              <div className="container mx-auto mt-1 flex flex-wrap items-center justify-between gap-4">
+                <p className="text-white mt-1">@ 2026 Reanblock: Solidity &amp; Yul Smart Contract Security Researcher Tutorials</p>
+                <ul className="flex gap-4 ml-auto">
+                  <li>
+                    <a className="text-white" href="https://www.youtube.com/channel/UCsec5JlNrA02iT4826EazTw" tabIndex={-1} aria-disabled="true">Tutorials</a>
+                  </li>
+                  <li>
+                    <a className="text-white" href="https://github.com/reanblock/reanblock-audit-reports">Audits</a>
+                  </li>
+                  <li>
+                    <a className="text-white" href="https://www.linkedin.com/in/jensendarren1">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </footer>
         </div>
       </div>
+
+
     </main>
   );
 }
